@@ -19,30 +19,6 @@
       src: url('./fonts/empikProV-Regular.woff2') format('woff2');
     }
 
-    @keyframes es-move {
-      0% {
-        transform: translateY(0);
-      }
-
-      50% {
-        transform: translateY(-10px);
-      }
-
-      100% {
-        transform: translateY(0);
-      }
-    }
-
-    @keyframes es-rotate {
-      from {
-        transform: rotate(0deg);
-      }
-
-      to {
-        transform: rotate(180deg);
-      }
-    }
-
     #es-sodastream.es-sodastream p {
       line-height: inherit !important;
       color: #13294b !important;
@@ -53,7 +29,6 @@
       font-size: 25px;
       line-height: 1.2;
       max-width: 830px;
-      min-width: 320px;
       margin: 0 auto;
       padding: 0;
       color: #13294b !important;
@@ -366,32 +341,8 @@
       margin-bottom: -50px;
     }
 
-    #es-sodastream.es-sodastream .es-cta__btn {
-      background-color: #75a7ad;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-      position: absolute;
-      bottom: -20px;
-      margin-left: auto;
-      margin-right: auto;
-      left: 0;
-      right: 0;
-      padding: 5px;
-      box-shadow: 0px 8px 37px -10px rgb(19, 41, 75);
-      animation: es-move 2s infinite;
-      cursor: pointer;
-    }
-
     #es-sodastream.es-sodastream .es-cta__btn img {
       width: 25px;
-    }
-
-    #es-sodastream.es-sodastream .es-rotate {
-      animation: es-rotate 1s forwards;
     }
 
     #es-sodastream.es-sodastream .es-toggle {
@@ -798,6 +749,7 @@
       #es-sodastream.es-sodastream .es-bez__wrapper-desktop-sodastream-container-text--small {
         font-family: empik, 'Bold', sans-serif;
         font-size: 18px;
+        font-weight: 600;
       }
       #es-sodastream.es-sodastream .es-bez__wrapper-desktop-sodastream-container-text--big {
         font-family: empik, 'Black', sans-serif;
@@ -842,7 +794,7 @@
       align-items: center;
     }
     #es-sodastream.es-sodastream .es-bez__wrapper-mobile-sodastream-container-text--big {
-      font-family: empik, 'Black', sans-serif;
+      font-weight: 600;
       font-size: 22px
     }
     #es-sodastream.es-sodastream .es-bez__wrapper-mobile-sodastream-container-text--small {
@@ -861,9 +813,6 @@
     }
 
     @media screen and (min-width: 1010px) {
-      #es-sodastream.es-sodastream .es-bez__wrapper-mobile-sodastream-container {
-        flex-direction: row;
-      }
       #es-sodastream.es-sodastream .es-bez__wrapper-mobile-sodastream-container-text-wrapper {
         padding-left: 5%;
       }
@@ -875,7 +824,7 @@
       }
     }
 
-    @media screen and (min-width: 1150px) {
+    @media screen and (min-width: 1365px) {
       #es-sodastream.es-sodastream .es-bez__wrapper-mobile {
         display: none;
       }
